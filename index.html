@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enlarge your penis</title>
+</head>
+<body>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+  html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #50ab34;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                     supported by Chrome, Edge, Opera and Firefox */
+    font-family: 'VT323', monospace;
+    font-weight: bold;
+    font-size: 6vw;
+    overflow: auto;
+  }
+
+  .title {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+  }
+  .penis {
+    cursor: zoom-in;
+    white-space: nowrap;
+    font-size: 8vw;
+    justify-content: center;
+  }
+</style>
+<div class="container">
+  <div class="title">...just click on it!</div>
+  <span class="penis">( |<span class="slot"></span>==D</span>
+</div>
+
+<script>
+  function enlarge() {
+    document.querySelector('.slot').innerHTML += '=';
+  }
+  document.querySelector('.penis').addEventListener('click', enlarge);
+  document.querySelector('.penis').addEventListener('dblclick', enlarge);
+</script>
+</body>
+</html>
