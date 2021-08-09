@@ -31,10 +31,11 @@
 
   .title {
     position: fixed;
-    top:0;
-    left:0;
-    right:0;
+    top: 0;
+    left: 0;
+    right: 0;
   }
+
   .penis {
     margin-left: 10px;
     margin-right: 10px;
@@ -46,15 +47,20 @@
 </style>
 <div class="container">
   <div class="title">...just click on it!</div>
-  <span class="penis">( |<span class="slot"></span>==D</span>
-</div>
+  <div class="penis">
+    <div>(°͜ʖ</div>
+    <div>&nbsp;|\</div>
+    <div>&nbsp;(|<span class="slot"></span>==D</div>
+    <div>&nbsp;||</div>
+  </div>
 
-<script>
-  function enlarge() {
-    document.querySelector('.slot').innerHTML += '=';
-  }
-  document.querySelector('.penis').addEventListener('click', enlarge);
-  document.querySelector('.penis').addEventListener('dblclick', enlarge);
-</script>
+  <script>
+    function enlarge() {
+      document.querySelector('.slot').innerHTML += '=';
+    }
+
+    document.querySelector('.penis').addEventListener('click', enlarge);
+    document.querySelector('.penis').addEventListener('dblclick', enlarge);
+  </script>
 </body>
 </html>
